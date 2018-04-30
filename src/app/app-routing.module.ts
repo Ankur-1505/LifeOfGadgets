@@ -4,10 +4,12 @@ import { HomeComponent } from './home/home.component';
 import { CarsComponent } from './cars/cars.component';
 import { WatchesComponent } from './watches/watches.component';
 import { PhonesComponent } from './phones/phones.component';
+import { LazyloadingComponent } from './lazyloading/lazyloading.component';
 
 
 
-const routes: Routes = [
+
+const routes: Routes = [  
   {
     path: 'home',
     component : HomeComponent
@@ -21,9 +23,12 @@ const routes: Routes = [
     component: WatchesComponent
   },
   {
-    path:'phones',
-    component: PhonesComponent
+    path:'phones',loadChildren:'./phones/phones.module#PhonesModule'
   },
+  {
+    path:'lazy',loadChildren:'./lazyloading/lazyloading.module#LazyloadingModule'
+  },
+
   
   
   

@@ -16,7 +16,7 @@ import { PhonesComponent } from './phones/phones.component';
     HomeComponent,
     CarsComponent,
     WatchesComponent,
-    PhonesComponent
+    PhonesComponent,
   ],
   imports: [
     BrowserModule,
