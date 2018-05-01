@@ -4,7 +4,11 @@ import { HomeComponent } from './home/home.component';
 import { CarsComponent } from './cars/cars.component';
 import { WatchesComponent } from './watches/watches.component';
 import { PhonesComponent } from './phones/phones.component';
-import { LazyloadingComponent } from './lazyloading/lazyloading.component';
+
+
+
+
+
 
 
 
