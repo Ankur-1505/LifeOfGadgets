@@ -1,35 +1,51 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" [routerLink]="(['home'])">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link"[routerLink]="(['home'])" >Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link"[routerLink]="(['cars'])" >Cars <span class="sr-only">(current)</span></a>
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark  black  " [containerInside]="false">
+    <logo>
+  
+        <a class="logo navbar-brand" href="#"><strong>Navbar</strong></a>    
+    </logo>
+    <links>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active waves-light" mdbWavesEffect>
+                <a class="nav-link">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link">Cars</a>
+            </li>
+            <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link">Phones</a>
+            </li>
+            <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link">Watches</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link"><i class="fa fa-instagram"></i></a>
+            </li>
+        </ul>
+    </links>
+</mdb-navbar>
+
+
+<!-- Main -->
+<main>
+    <div class="container" style="height:1500px;">
+        <div class="row pt-5">
+            <div class="col text-center">
+                <h2>This Navbar isn't fixed</h2>
+                <h5>When you scroll down it will disappear</h5>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- /.Main -->
         
-      </li>
-      <li class="nav-item">
-        <a class="nav-link"[routerLink]="(['watches'])" >Watches </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="(['phones'])">Phones</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="(['lazy'])">lazycomponent</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-
-
-
-
 
 
 

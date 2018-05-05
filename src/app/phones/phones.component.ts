@@ -1,5 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
+
+
+
+
+
+
+
+
+
+
 @Component({
   selector: 'app-phones',
   templateUrl: './phones.component.html',
@@ -7,9 +17,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PhonesComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit() {
+    console.log('success')
   }
 
 }
